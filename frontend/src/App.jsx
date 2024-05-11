@@ -15,8 +15,8 @@ const App = () => {
 
   return (
     <>
-      {isLoading && <Preloader />}  {/* Conditionally render the preloader */}
-      <h1>hello</h1>
+      {isLoading && <Preloader />} {/* Conditionally render the preloader */}
+      <h1 className="">hello</h1>
     </>
   );
 };
