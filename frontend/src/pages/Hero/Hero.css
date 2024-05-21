@@ -1,0 +1,31 @@
+.blur1 {
+  animation: scaler 4s infinite ease-in-out;
+}
+
+.blur2 {
+  animation: scalerr 4s infinite ease-in-out;
+}
+
+@keyframes scaler {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes scalerr {
+  0% {
+    scale: 1.5;
+  }
+  50% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
