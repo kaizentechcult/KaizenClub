@@ -4,8 +4,12 @@
 ```sh cd frontend```
 
 First Install Node Modules
-```sh npm i ```
+```sh
+npm i
+ ```
 
 To start the app
-```sh npm run dev```
+```sh
+npm run dev
+```
 
