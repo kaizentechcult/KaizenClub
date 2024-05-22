@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
         <div className="right-main flex-1">
           <img
-            className="h-[85vh] rounded-lg "
+            className="h-[85vh] rounded-lg  scale-75"
             src="https://th.bing.com/th/id/OIG1.amdmtB.mSlhKH4FEItB7?pid=ImgGn"
             alt=""
           />
