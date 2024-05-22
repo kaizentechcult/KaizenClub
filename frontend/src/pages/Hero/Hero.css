@@ -1,9 +1,9 @@
 .blur1 {
-  animation: scaler 4s infinite ease-in-out;
+  animation: scaler 2s infinite ease-in-out;
 }
 
 .blur2 {
-  animation: scalerr 4s infinite ease-in-out;
+  animation: scalerr 2s infinite ease-in-out;
 }
 
 @keyframes scaler {
