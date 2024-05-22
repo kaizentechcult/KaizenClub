@@ -1,6 +1,6 @@
 # Kaizen-Portfolio
 
-# How to Run On local Machine
+## How to Run On local Machine
 ```sh cd frontend```
 
 First Install Node Modules
