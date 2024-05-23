@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "../../components/Heading/Heading";
+import Heading from "../Heading/Heading";
 
 const Join_us = () => {
   return (
