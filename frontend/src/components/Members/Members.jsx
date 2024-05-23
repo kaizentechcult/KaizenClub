@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Member from "../../components/Member/Member";
 import Krish from "/Krish.jpg";
 import Sanskriti from "/Sanskriti.jpg";
@@ -13,12 +13,10 @@ import Manisha from "/Manisha.jpg";
 import Sooraj from "/Sooraj.jpg";
 import Avinash from "/Avinash.jpg";
 import Kanak from "/Kanak.jpg";
-import Heading from "../../components/Heading/Heading";
 
 const Members = () => {
   return (
     <div className="">
-      <Heading text={"Our Team"} />
       <div className="flex m-10 flex-wrap  justify-evenly items-center  gap-3">
         <Member name="Shreehita" post="Founder" img={Shree} />
         <Member name="Krish" post="Founder" img={Krish} />

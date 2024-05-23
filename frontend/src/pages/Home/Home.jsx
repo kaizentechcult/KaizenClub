@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Hero from "../../components/Hero/Hero";
 import Members from "../../components/Members/Members";
@@ -10,6 +10,7 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
+      <Heading text={"Our Team"} />
       <Members />
       <Heading text={"Projects"} />
       <Projects />

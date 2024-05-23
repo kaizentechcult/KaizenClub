@@ -1,12 +1,12 @@
-import React from "react";
+// import React from "react";
 import "../Hero/Hero.css";
 
 const Hero = () => {
   return (
-    <div className="hero h-[90vh] snap-item snap-center">
-      <div className="blur1 bg-[#7e44d8] h-64 w-64 blur-[50px] absolute -right-32 top-[10rem] rounded-full -z-10"></div>
+    <div className="hero ">
+      <div className="blur1 bg-[#7e44d8] h-64 w-64 blur-[50px] absolute -right-32 top-[10rem] rounded-full -z-10 hidden lg:block"></div>
       <div className="blur2 bg-[#066093] h-64 w-64 blur-[50px] absolute left-[-10rem] top-[30rem] rounded-full -z-10 "></div>
-      <div className="outer flex items-center">
+      <div className="outer flex flex-col items-center lg:flex-row">
         <div className="main flex-1">
           <h1 className="text-7xl text-center text-white">
             Kaizen Technical <br /> Society
@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
         <div className="right-main flex-1">
           <img
-            className="h-[85vh] rounded-lg  scale-75"
+            className=" lg:h-[85vh] rounded-lg  scale-75"
             src="https://th.bing.com/th/id/OIG1.amdmtB.mSlhKH4FEItB7?pid=ImgGn"
             alt=""
           />

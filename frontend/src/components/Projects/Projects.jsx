@@ -1,5 +1,5 @@
-import React from "react";
-import Heading from "../../components/Heading/Heading";
+// import React from "react";
+// import Heading from "../../components/Heading/Heading";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Project1 from "/Project1.png"
 

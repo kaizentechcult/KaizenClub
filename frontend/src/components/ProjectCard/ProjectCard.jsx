@@ -1,8 +1,9 @@
-import React from "react";
+// import React from "react";
+import PropTypes from 'prop-types'; // Import Proptypes
 
 const ProjectCard = ({ image }) => {
   return (
-    <div className="w-[25rem] rounded-xl bg-slate-800 p-5 mb-10">
+    <div className="w-[30vh] md:w-[25rem] rounded-xl bg-slate-800 p-5 mb-10">
       <img src={image} alt="" className="rounded-xl mb-5" />
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
@@ -17,6 +18,10 @@ const ProjectCard = ({ image }) => {
       </button>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  image: PropTypes.string.isRequired, // Define image prop as required string
 };
 
 export default ProjectCard;
