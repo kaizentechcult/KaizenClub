@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="hero ">
       <div className="blur1 bg-[#7e44d8] h-64 w-64 blur-[50px] absolute -right-32 top-[10rem] rounded-full -z-10 hidden lg:block"></div>
-      <div className="blur2 bg-[#066093] h-64 w-64 blur-[50px] absolute left-[-10rem] top-[30rem] rounded-full -z-10 "></div>
+      <div className="blur2 bg-[#066093] h-64 w-64 blur-[50px] absolute left-[-10rem] top-[30rem] rounded-full -z-10 hidden lg:block"></div>
       <div className="outer flex flex-col items-center lg:flex-row">
         <div className="main flex-1">
           <h1 className="text-7xl text-center text-white">

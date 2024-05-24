@@ -1,8 +1,3 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
-// eslint-disable-next-line no-unused-vars
-import Heading from "../Heading/Heading";
-
 const Join_us = () => {
   return (
     <div className="flex justify-center items-center pb-32">
@@ -12,7 +7,6 @@ const Join_us = () => {
         <form action="" className="flex flex-col gap-10">
           <input type="text" placeholder="mail" />
           <input type="tele" placeholder="Phone" />
-
         </form>
       </div>
     </div>
