@@ -3,7 +3,7 @@ import Member from "../../components/Member/Member";
 
 const Members = () => {
   return (
-    <div className="">
+    <div id="Members" className="">
       <div className="flex m-10 flex-wrap  justify-evenly items-center  gap-3">
         <Member name="Shreehita" post="Founder" img={"Shree.jpg"} />
         <Member name="Krish" post="Founder" img={"Krish.jpg"} />

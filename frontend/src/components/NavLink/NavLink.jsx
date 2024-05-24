@@ -1,17 +1,17 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-const NavLink = ({ text }) => {
+const NavLink = ({ text, toLink }) => {
   return (
     <li>
-      <a href="#" className="hover:text-white text-2xl">
-        {text}
-      </a>
+      <Link to={toLink}>{text}</Link>
+
     </li>
   );
 };
 NavLink.propTypes = {
   text: PropTypes.string.isRequired,
-  // toLink: PropTypes.string.isRequired,
+  toLink: PropTypes.string.isRequired,
 };
 
 export default NavLink;
