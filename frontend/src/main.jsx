@@ -6,10 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SignIn from "./pages/SignUp/SignIn.jsx";
 import LogIn from "./pages/LogIn/LogIn.jsx";
 
-
 const router = createBrowserRouter([
   {
-    path: "/kaizen-portfolio/home",
+    path: "/kaizen-portfolio/",
     element: <App />,
   },
   {
