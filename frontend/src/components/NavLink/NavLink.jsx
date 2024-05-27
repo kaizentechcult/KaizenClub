@@ -11,7 +11,7 @@ const NavLink = ({ text, toLink }) => {
 };
 NavLink.propTypes = {
   text: PropTypes.string.isRequired,
-  toLink: PropTypes.string.isRequired,
+  toLink: PropTypes.string,
 };
 
 export default NavLink;
