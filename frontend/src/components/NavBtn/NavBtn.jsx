@@ -12,7 +12,7 @@ const NavBtn = ({ text, toLink }) => {
 };
 NavBtn.propTypes = {
   text: PropTypes.string.isRequired,
-  toLink: PropTypes.string.isRequired,
+  toLink: PropTypes.string,
 };
 
 export default NavBtn;

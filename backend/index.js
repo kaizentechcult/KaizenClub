@@ -227,15 +227,7 @@
 //   res.send("Verify")
 // });
 
-// // app.post("/verification", async (req, res) => {
-// //   const otpFromSession = req.session && req.session.otp;
-// //   const otpFromUser = req.body;
-// //   if (otpFromSession == otpFromUser) {
-// //     const newUser = new User({ email, username });
-// //     const regUser = await User.register(newUser, password);
-// //     console.log(regUser);
-// //   }
-// // });
+
 
 // app.get("/reqcount", (req, res) => {
 //   if (req.session.count) {
@@ -349,6 +341,24 @@ app.post("/login", (req, res) => {
   const { email, password } = req.body;
   console.log("Received login data:", email, password);
 });
+
+app.post("/signin", (req, res) => {
+  const { username, email, password } = req.body;
+  const OTP = generateOTP();
+  sendMail(email, OTP).catch(console.error);
+  req.session.otp = OTP;
+  res.sendStatus(200);
+});
+
+// app.post("/verification", async (req, res) => {
+//   const otpFromSession = req.session && req.session.otp;
+//   const otpFromUser = req.body;
+//   if (otpFromSession == otpFromUser) {
+//     const newUser = new User({ email, username });
+//     const regUser = await User.register(newUser, password);
+//     console.log(regUser);
+//   }
+// });
 
 app.listen(5000, () => {
   console.log("Backend is running on port 5000");
