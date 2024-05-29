@@ -35,7 +35,7 @@ const App = () => {
         <Route path="/kaizen-portfolio/signup" element={<SignIn />} />
         <Route path="/kaizen-portfolio/login" element={<LogIn />} />
         <Route
-          path="/kaizen-portfolio/protected"
+          path="/kaizen-portfolio/Dashboard"
           element={<ProtectedRoute element={<Dashboard />} />}
         />
         <Route path="*" element={<Navigate to="/kaizen-portfolio/login" />} />

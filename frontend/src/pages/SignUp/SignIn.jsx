@@ -22,7 +22,7 @@ const SignIn = () => {
     e.preventDefault();
     try {
       const { username, email, password } = signin;
-      const response = await axios.post("http://localhost:5000/signup", {
+      const response = await axios.post("https://kaizen-portfolio.onrender.com/signup", {
         username,
         email,
         password,

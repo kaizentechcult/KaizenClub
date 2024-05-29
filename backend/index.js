@@ -12,9 +12,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const uri = process.env.MongoUrl;
+
 // Connect to MongoDB
 mongoose
-  .connect("mongodb://127.0.0.1:27017/Kaizen", {
+  .connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

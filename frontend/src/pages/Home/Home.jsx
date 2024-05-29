@@ -10,10 +10,10 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
-      <Heading text={"Our Team"} />
+      {/* <Heading text={"Our Team"} />
       <Members />
       <Heading text={"Projects"} />
-      <Projects />
+      <Projects /> */}
     </>
   );
 };

@@ -21,15 +21,16 @@ const Login = () => {
     e.preventDefault();
     try {
       const { username, password } = login;
-      const response = await axios.post("http://localhost:5000/login", {
+      const response = await axios.post("https://kaizen-portfolio.onrender.com/login", {
         username,
         password,
       });
-      console.log("Login successful! Response data:", response.data);
-
+      console.log("Login successful! Response data:", response.status);
       if (response.status === 200) {
-        localStorage.setItem("token", response.data.token);
-        navigate("/kaizen-portfolio/protected");
+        // Handle successful login (e.g., store token in local storage or state)
+        const token = response.data.token; // Assuming the response contains a token
+        localStorage.setItem("userToken", token);
+        navigate("/kaizen-portfolio/dashboard"); // Redirect to protected route
       } else {
         console.error("Login failed:", response.status);
       }
@@ -41,7 +42,7 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="w-full max-w-md p-8 space-y-6 bg-gray-800 shadow-md rounded-md">
-        <h2 className="text-center text-3xl">Log In</h2>
+        <h2 className="text-center text-3xl">Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-outer flex flex-col gap-7">
             <FormInput
@@ -54,7 +55,7 @@ const Login = () => {
               inpType={"password"}
               handleFunc={handleChange}
             />
-            <FormBtn text={"Log In"} />
+            <FormBtn text={"Login"} />
           </div>
         </form>
       </div>
