@@ -105,6 +105,10 @@ app.post("/login", async (req, res) => {
   }
 });
 
+app.get('/', (req, res)=>{
+  res.send("connected")
+})
+
 // Protected Route
 app.get("/protected", (req, res) => {
   const authHeader = req.headers.authorization;
