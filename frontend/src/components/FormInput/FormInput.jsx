@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const FormInput = ({ textField, inpType, handleFunc }) => {
+const FormInput = ({ textField, inpType, handleFunc, value }) => {
   return (
     <div className="form-cont flex flex-col">
       <label
@@ -13,6 +13,7 @@ const FormInput = ({ textField, inpType, handleFunc }) => {
         className="block w-full px-3 py-2 text-gray-800 border-none focus:border-none rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         type={inpType}
         name={textField}
+        value={value}
         // placeholder={textField}
         id={textField}
         onChange={handleFunc}
@@ -24,6 +25,7 @@ const FormInput = ({ textField, inpType, handleFunc }) => {
 FormInput.propTypes = {
   textField: PropTypes.string,
   inpType: PropTypes.string,
+  value: PropTypes.string,
   handleFunc: PropTypes.func,
 };
 

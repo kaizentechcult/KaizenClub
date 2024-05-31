@@ -9,25 +9,25 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "../../../firebase/config";
 
 const SignIn = () => {
-  const [signin, setSignIn] = useState({
-    username: "",
-    email: "",
-    password: "",
-  });
-  const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
-
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  
   const navigate = useNavigate();
-
+  
   const handleChange = (event) => {
     const { name, value } = event.target;
     setSignIn({ ...signin, [name]: value });
   };
+  
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+console.log([username, email, password])
     try {
-      const res = await createUserWithEmailAndPassword(signin.email, signin.password);
+      const res = await createUserWithEmailAndPassword(email, password);
       if (res) {
         console.log("user Added")
         navigate("/kaizen-portfolio/dashboard"); // Redirect to protected route
@@ -47,17 +47,20 @@ const SignIn = () => {
             <FormInput
               textField={"username"}
               inpType={"text"}
-              handleFunc={handleChange}
+              handleFunc={(e) => setUsername(e.target.value)}
+              valuein={username}
             />
             <FormInput
               textField={"email"}
               inpType={"email"}
-              handleFunc={handleChange}
+              handleFunc={(e) => setEmail(e.target.value)}
+              valuein={email}
             />
             <FormInput
               textField={"password"}
               inpType={"password"}
-              handleFunc={handleChange}
+              handleFunc={(e) => setPassword(e.target.value)}
+              valuein={password}
             />
             <FormBtn text={"Sign Up"} />
           </div>
