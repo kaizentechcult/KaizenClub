@@ -18,13 +18,19 @@ const Login = () => {
   };
 
   const handleSubmit = async (e) => {
+    // const res = await axios.get("https://kaizen-portfolio.onrender.com/");
+    // console.log(res);
     e.preventDefault();
     try {
       const { username, password } = login;
-      const response = await axios.post("https://kaizen-portfolio.onrender.com/login", {
-        username,
-        password,
-      });
+      console.log(username, password);
+      const response = await axios.post(
+        "https://kaizen-portfolio.onrender.com/login",
+        {
+          username,
+          password,
+        }
+      );
       console.log("Login successful! Response data:", response.status);
       if (response.status === 200) {
         // Handle successful login (e.g., store token in local storage or state)

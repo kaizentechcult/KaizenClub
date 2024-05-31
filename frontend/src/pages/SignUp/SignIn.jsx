@@ -3,6 +3,10 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import FormInput from "../../components/FormInput/FormInput";
 import FormBtn from "../../components/FormBtn/FormBtn";
+// import Link from "next/link";
+// import { useRouter } from "next/navigation";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { auth } from "../../../firebase/config";
 
 const SignIn = () => {
   const [signin, setSignIn] = useState({
@@ -10,6 +14,8 @@ const SignIn = () => {
     email: "",
     password: "",
   });
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
 
   const navigate = useNavigate();
 
@@ -21,21 +27,14 @@ const SignIn = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { username, email, password } = signin;
-      const response = await axios.post("https://kaizen-portfolio.onrender.com/signup", {
-        username,
-        email,
-        password,
-      });
-      console.log("Signup successful! Response data:", response.status);
-      if (response.status === 200) {
-        navigate("/kaizen-portfolio/login");
-      } else {
-        console.error("Signup failed:", response.status);
+      const res = await createUserWithEmailAndPassword(signin.email, signin.password);
+      if (res) {
+        console.log("user Added")
+        navigate("/kaizen-portfolio/dashboard"); // Redirect to protected route
+
       }
-    } catch (error) {
-      navigate("/kaizen-portfolio/signup");
-      console.error("Signup failed:", error);
+    } catch (e) {
+      console.error(e);
     }
   };
 
