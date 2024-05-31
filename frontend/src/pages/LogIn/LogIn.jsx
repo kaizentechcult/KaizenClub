@@ -1,41 +1,31 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import axios from "axios"; // Remove if not used
 import FormInput from "../../components/FormInput/FormInput";
 import FormBtn from "../../components/FormBtn/FormBtn";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { auth } from "../../../firebase/config";
 
 const Login = () => {
-  const [login, setLogin] = useState({
-    username: "",
-    password: "",
-  });
-
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setLogin({ ...login, [name]: value });
-  };
+  const [signInWithEmailAndPassword, user, loading, error] =
+    useSignInWithEmailAndPassword(auth);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(email, password);
     try {
-      const { username, password } = login;
-      const response = await axios.post("https://kaizen-portfolio.onrender.com/login", {
-        username,
-        password,
-      });
-      console.log("Login successful! Response data:", response.status);
-      if (response.status === 200) {
-        // Handle successful login (e.g., store token in local storage or state)
-        const token = response.data.token; // Assuming the response contains a token
-        localStorage.setItem("userToken", token);
-        navigate("/kaizen-portfolio/dashboard"); // Redirect to protected route
-      } else {
-        console.error("Login failed:", response.status);
+      const res = await signInWithEmailAndPassword(email, password);
+      if (res) {
+        console.log({ res });
+        // setLogIn({ email: "", password: "" }); // Clear form after successful login
+        navigate("/kaizen-portfolio/home"); // Replace with your desired route after login
       }
-    } catch (error) {
-      console.error("Login failed:", error);
+    } catch (e) {
+      console.error(e);
+      alert("Login failed. Please check your credentials.");
     }
   };
 
@@ -46,14 +36,18 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <div className="form-outer flex flex-col gap-7">
             <FormInput
-              textField={"username"}
+              textField={"email"}
               inpType={"text"}
-              handleFunc={handleChange}
-            />
+              handleFunc={(e) => setEmail(e.target.value)}
+              valuein={email}
+              // handleChange={handleChange}
+              />
             <FormInput
               textField={"password"}
               inpType={"password"}
-              handleFunc={handleChange}
+              handleFunc={(e) => setPassword(e.target.value)}
+              valuein={password}
+              // handleChange={handleChange}
             />
             <FormBtn text={"Login"} />
           </div>

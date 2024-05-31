@@ -1,5 +1,6 @@
 import NavLinks from "../NavLinks/NavLinks";
 
+
 const Navbar = () => {
   return (
     <div className="navbar flex mb-4 invisible lg:visible">
