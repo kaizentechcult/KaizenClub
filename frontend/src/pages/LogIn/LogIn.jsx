@@ -4,7 +4,8 @@ import axios from "axios"; // Remove if not used
 import FormInput from "../../components/FormInput/FormInput";
 import FormBtn from "../../components/FormBtn/FormBtn";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { auth } from "../../../firebase/config";
+import { auth } from "../../firebase/config";
+
 
 const Login = () => {
   const [email, setEmail] = useState("");
