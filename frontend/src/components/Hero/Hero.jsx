@@ -1,5 +1,7 @@
-// import React from "react";
-import "../Hero/Hero.css";
+import React, { Suspense, lazy } from 'react';
+import '../Hero/Hero.css';
+
+const LazyImage = lazy(() => import('../LazyImg/LazyImg'));
 
 const Hero = () => {
   return (
@@ -19,11 +21,9 @@ const Hero = () => {
           </p>
         </div>
         <div className="right-main flex-1">
-          <img
-            className=" lg:h-[85vh] rounded-lg  scale-75"
-            src="https://th.bing.com/th/id/OIG1.amdmtB.mSlhKH4FEItB7?pid=ImgGn"
-            alt=""
-          />
+          <Suspense fallback={<div>Loading...</div>}>
+            <LazyImage />
+          </Suspense>
         </div>
       </div>
     </div>

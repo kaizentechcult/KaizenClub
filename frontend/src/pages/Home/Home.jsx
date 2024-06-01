@@ -3,21 +3,23 @@ import { useNavigate } from "react-router-dom";
 import Hero from "../../components/Hero/Hero";
 import { auth } from "../../firebase/config";
 import { useAuthState } from "react-firebase-hooks/auth";
+import Members from "../Members/Members";
+import Navbar from "../../components/Navbar/Navbar";
+import JoinUs from "../JoinUs/JoinUs";
+import Projects from "../../components/Projects/Projects";
 
 const Home = () => {
   const navigate = useNavigate();
-  const [user] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth); // Include loading state
 
-  useEffect(() => {
-    if (!user) {
-      // Redirect to login if not authenticated
-      navigate("/kaizen-portfolio/login");
-    }
-  }, [user]); // Dependency array to trigger effect on user state change
-
+  // Conditional rendering based on authentication status
   return (
     <>
+      <Navbar />
       <Hero />
+      <Members />
+      <JoinUs />
+      <Projects />
     </>
   );
 };
