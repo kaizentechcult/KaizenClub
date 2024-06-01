@@ -1,6 +1,6 @@
 // import axios from "axios";
 import "./index.css";
-import SignIn from "./pages/SignUp/SignIn.jsx";
+import SignIn from "./pages/SignUp/SignUp.jsx";
 import LogIn from "./pages/LogIn/LogIn.jsx";
 import React, { Suspense, useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -17,22 +17,17 @@ import {
 import Members from "./pages/Members/Members.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
-{
-  /* <Route path="/kaizen-portfolio/projects" element={<Projects />} /> */
-}
-{
-}
-{
-  /* if (user) {<Route path="/kaizen-portfolio/home" element={<Home />} />} */
-}
+
 const App = () => {
   const [user] = useAuthState(auth);
+  
   // const variable =
   // console.log(variable);
   return (
     <Router>
       <Navbar />
       <Routes>
+        
         <Route path="/kaizen-portfolio/home" element={<Home />} />
         <Route path="/kaizen-portfolio/members" element={<Members />} />
         <Route path="/kaizen-portfolio/projects" element={<Projects />} />
