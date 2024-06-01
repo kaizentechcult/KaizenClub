@@ -40,7 +40,7 @@ const Login = () => {
             <div className="form-outer flex flex-col gap-7">
               <FormInput
                 Label={"Email"}
-                textField={"mail"}
+                textField={"email"}
                 inpType={"text"}
                 handleFunc={(e) => setEmail(e.target.value)}
                 valuein={email}
