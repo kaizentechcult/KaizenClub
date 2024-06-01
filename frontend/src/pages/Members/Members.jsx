@@ -1,6 +1,7 @@
 // import React from "react";
 // import GitHub from "@mui/icons-material/GitHub";
 import Member from "../../components/Member/Member";
+import Heading from "../../components/Heading/Heading";
 
 const membersData = [
   {
@@ -90,8 +91,10 @@ const membersData = [
 ];
 
 const Members = () => {
+  // console.log();
   return (
     <div id="Members" className="">
+      <Heading text={"Our Team"} />
       <div className="flex m-10 flex-wrap justify-evenly items-center gap-3">
         {membersData.map((member) => (
           <Member

@@ -6,7 +6,9 @@ import FormBtn from "../../components/FormBtn/FormBtn";
 // import Link from "next/link";
 // import { useRouter } from "next/navigation";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { auth } from "../../../firebase/config";
+import { auth } from "../../firebase/config";
+
+
 
 const SignIn = () => {
   const [username, setUsername] = useState("");
