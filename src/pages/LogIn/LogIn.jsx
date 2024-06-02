@@ -78,10 +78,13 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if(password.length < 6){
+      setError("Password must be at least 6 characters long");
+      return;
+    }
     try {
       const res = await signInWithEmailAndPassword(email, password);
       navigate("/KaizenClub/home");
-
       console.log(res)
     } catch (err) {
       setError(err.message);
