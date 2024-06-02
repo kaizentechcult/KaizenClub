@@ -1,0 +1,1 @@
+import{j as t}from"./index-DzerStQk.js";const s=()=>t.jsx("img",{className:"lg:h-[85vh] rounded-lg scale-75",src:"https://th.bing.com/th/id/OIG1.amdmtB.mSlhKH4FEItB7?pid=ImgGn",alt:""});export{s as default};
