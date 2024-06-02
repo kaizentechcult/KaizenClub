@@ -1,21 +1,20 @@
-<svg width="212" height="208" viewBox="0 0 212 208" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="212" height="208" rx="104" fill="white"/>
-<g filter="url(#filter0_d_0_4)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M61 72.2586V138.207C61 144.069 71.8213 151.397 81.0966 142.603C86.974 137.032 96.5556 126.483 96.5556 126.483V138.207C96.5556 141.138 99.6474 147 107.377 147H142.932C149.116 147 153.754 136.741 149.116 130.879C144.967 126.946 125.975 106.596 122.015 102.347L96.5556 126.483L96.5556 107.431H73.3672L99.6474 82.5172V101.569L121.29 101.569L147.57 76.6552C153.754 70.7931 147.57 62 141.387 62H122.479C121.711 62 120.979 62.2945 120.422 62.8228L99.6474 82.5172V72.2586C99.6474 66.3966 96.5556 62 91.9179 62H70.2754C67.1836 62 61 66.3966 61 72.2586Z" fill="#35388B"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M61 72.2586V138.207C61 144.069 71.8213 151.397 81.0966 142.603C86.974 137.032 96.5556 126.483 96.5556 126.483V138.207C96.5556 141.138 99.6474 147 107.377 147H142.932C149.116 147 153.754 136.741 149.116 130.879C144.967 126.946 125.975 106.596 122.015 102.347L96.5556 126.483L96.5556 107.431H73.3672L99.6474 82.5172V101.569L121.29 101.569L147.57 76.6552C153.754 70.7931 147.57 62 141.387 62H122.479C121.711 62 120.979 62.2945 120.422 62.8228L99.6474 82.5172V72.2586C99.6474 66.3966 96.5556 62 91.9179 62H70.2754C67.1836 62 61 66.3966 61 72.2586Z" fill="url(#paint0_linear_0_4)"/>
+<svg width="385" height="362" viewBox="0 0 385 362" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_0_5)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 42.6987V317.19C4 341.589 49.3131 372.088 88.1529 335.49C112.764 312.299 152.886 268.392 152.886 268.392V317.19C152.886 329.39 165.833 353.789 198.199 353.789H347.085C372.978 353.789 392.398 311.09 372.978 286.691C355.607 270.322 276.078 185.62 259.494 167.934L152.886 268.392V189.094H55.7864L165.833 85.3973L165.833 164.695L256.459 164.695L366.505 60.9981C392.398 36.5989 366.505 0 340.612 0H257.616C256.851 0 256.149 0.292113 255.592 0.816628L165.833 85.3973V42.6987C165.833 18.2994 152.886 0 133.466 0H42.8398C29.8932 0 4 18.2994 4 42.6987Z" fill="#35388B"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 42.6987V317.19C4 341.589 49.3131 372.088 88.1529 335.49C112.764 312.299 152.886 268.392 152.886 268.392V317.19C152.886 329.39 165.833 353.789 198.199 353.789H347.085C372.978 353.789 392.398 311.09 372.978 286.691C355.607 270.322 276.078 185.62 259.494 167.934L152.886 268.392V189.094H55.7864L165.833 85.3973L165.833 164.695L256.459 164.695L366.505 60.9981C392.398 36.5989 366.505 0 340.612 0H257.616C256.851 0 256.149 0.292113 255.592 0.816628L165.833 85.3973V42.6987C165.833 18.2994 152.886 0 133.466 0H42.8398C29.8932 0 4 18.2994 4 42.6987Z" fill="url(#paint0_linear_0_5)"/>
 </g>
 <defs>
-<filter id="filter0_d_0_4" x="57" y="62" width="98" height="93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_0_5" x="0" y="0" width="384.867" height="361.789" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="2"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_4"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_4" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_5"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_5" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear_0_4" x1="106" y1="62" x2="106" y2="147" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_0_5" x1="192.434" y1="0" x2="192.434" y2="353.789" gradientUnits="userSpaceOnUse">
 <stop stop-opacity="0"/>
 <stop offset="0.19" stop-color="#18153A"/>
 <stop offset="0.865" stop-color="#18153A"/>
