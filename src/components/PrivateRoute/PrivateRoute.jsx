@@ -11,7 +11,7 @@ const PrivateRoute = ({ element: Element, ...rest }) => {
         <Element /> // Render the Element component if user is authenticated
       ) : (
         <Navigate
-          to="/kaizen-portfolio/login"
+          to="/KaizenClub/login"
           state={{ from: rest.pathname }}
           replace
         />
