@@ -16,12 +16,13 @@ const App = () => {
   return (
       <Router>
         <Routes>
+          <Route path="/kaizen-portfolio/" element={<LogIn />} />
+          <Route path="/kaizen-portfolio/login" element={<LogIn />} />
+          <Route path="/kaizen-portfolio/signup" element={<SignIn />} />
           <Route path="/kaizen-portfolio/home" element={<Home />} />
           <Route path="/kaizen-portfolio/members" element={<Members />} />
           <Route path="/kaizen-portfolio/projects" element={<Projects />} />
           <Route path="/kaizen-portfolio/join-us" element={<JoinUs />} />
-          <Route path="/kaizen-portfolio/signup" element={<SignIn />} />
-          <Route path="/kaizen-portfolio/login" element={<LogIn />} />
         </Routes>
       </Router>
   );
