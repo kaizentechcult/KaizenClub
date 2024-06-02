@@ -2,16 +2,9 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import FormInput from "../../components/FormInput/FormInput";
 import FormBtn from "../../components/FormBtn/FormBtn";
-// import Link from "next/link";
-// import { useRouter } from "next/navigation";
-// import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-// import { auth } from "../../firebase/config";
-// import { useState } from "react";
-// import { Link, useNavigate } from "react-router-dom";
-// import FormInput from "../../components/FormInput/FormInput";
-// import FormBtn from "../../components/FormBtn/FormBtn";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "../../firebase/config";
+import Loader from "../../components/Loader/Loader";
 
 const SignIn = () => {
   const [username, setUsername] = useState("");
@@ -28,16 +21,20 @@ const SignIn = () => {
 
     try {
       const res = await createUserWithEmailAndPassword(email, password);
+
       if (res) {
         console.log("user Added");
         // Clear form after successful registration
-        setUsername("");
-        setEmail("");
-        setPassword("");
+        console.log(user);
+        // setUsername("");
+        // setEmail("");
+        // setPassword("");
         navigate("/kaizen-portfolio/home"); // Redirect to home
       }
     } catch (err) {
-      console.error(err);
+      if (error) {
+        console.error(error);
+      }
       // Handle specific errors (e.g., display error message to user)
       alert("Registration failed. Please check your details.");
       // Optionally: navigate to login page based on error type
@@ -47,7 +44,7 @@ const SignIn = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       {loading ? (
-        <div>Loading...</div>
+        <Loader />
       ) : (
         <div className="w-full max-w-md p-8 space-y-6 bg-gray-800 shadow-md rounded-md">
           <h2 className="text-center text-3xl text-gray-200">Sign Up</h2>

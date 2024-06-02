@@ -11,8 +11,8 @@ const NavBtn = ({ text, toLink }) => {
   );
 };
 NavBtn.propTypes = {
-  text: PropTypes.string.isRequired,
-  toLink: PropTypes.string,
+  text: PropTypes.string,
+  toLink: PropTypes.string
 };
 
 export default NavBtn;

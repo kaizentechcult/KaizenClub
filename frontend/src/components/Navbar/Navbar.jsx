@@ -1,14 +1,10 @@
 import NavLinks from "../NavLinks/NavLinks";
 
-
 const Navbar = () => {
   return (
-    <div className="navbar flex mb-4 invisible lg:visible">
-      <div className="logo">
-        <img src="Logo.jpg" alt="logo" className="h-[5rem] m-2" />
+      <div className="bg-[#242d5e9c] h-14 mt-8 p-2 flex justify-center items-center rounded-full sticky">
+        <NavLinks />
       </div>
-      <NavLinks />
-    </div>
   );
 };
 

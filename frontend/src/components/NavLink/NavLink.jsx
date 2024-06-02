@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 const NavLink = ({ text, toLink }) => {
   return (
     <li>
-      <Link to={toLink}>{text}</Link>
-
+      <Link
+        to={toLink}
+        className="hover:text-white hover:bg-gray-600 p-3 rounded-full duration-500 "
+      >
+        {text}
+      </Link>
     </li>
   );
 };

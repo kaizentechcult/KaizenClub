@@ -2,6 +2,8 @@
 // import GitHub from "@mui/icons-material/GitHub";
 import Member from "../../components/Member/Member";
 import Heading from "../../components/Heading/Heading";
+import Navbar from "../../components/Navbar/Navbar";
+import Slide from "../../components/Slider/slider";
 
 const membersData = [
   {
@@ -93,18 +95,21 @@ const membersData = [
 const Members = () => {
   // console.log();
   return (
-    <div id="Members" className="">
+    <div className="flex flex-col justify-center items-center">
+      <Navbar />
       <Heading text={"Our Team"} />
       <div className="flex m-10 flex-wrap justify-evenly items-center gap-3">
         {membersData.map((member) => (
-          <Member
-            key={member.name}
-            name={member.name}
-            post={member.post}
-            img={member.img}
-            linkedin={member.linkedin}
-            github={member.github}
-          />
+          <Slide>
+            <Member
+              key={member.name}
+              name={member.name}
+              post={member.post}
+              img={member.img}
+              linkedin={member.linkedin}
+              github={member.github}
+            />
+          </Slide>
         ))}
       </div>
     </div>
