@@ -95,7 +95,7 @@ const Members = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <Navbar />
-      <Heading text={"Our Team"} />
+      {/* <Heading text={"Our Team"} /> */}
       <div className="flex m-10 flex-wrap justify-evenly items-center gap-3">
         {membersData.map((member) => (
           <Member {...member} />
