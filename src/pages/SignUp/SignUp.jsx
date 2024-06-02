@@ -27,7 +27,7 @@ const SignIn = () => {
         setUsername("");
         setEmail("");
         setPassword("");
-        navigate("/kaizen-portfolio/home");
+        navigate("/KaizenClub/home");
       }
     } catch (err) {
       if (error) {
@@ -72,7 +72,7 @@ const SignIn = () => {
           </form>
           <p className="text-white">
             Already Have an Account?{" "}
-            <Link className="text-blue-400" to={"/kaizen-portfolio/"}>
+            <Link className="text-blue-400" to={"/KaizenClub/"}>
               Login
             </Link>
           </p>

@@ -20,7 +20,7 @@ const App = () => {
   const [user] = useAuthState(auth);
 
   const handleLoginRedirect = async () => {
-    return user ? "/kaizen-portfolio/home" : "/kaizen-portfolio/login"; // Redirect to appropriate route
+    return user ? "/KaizenClub/home" : "/KaizenClub/login"; // Redirect to appropriate route
   };
 
   return (

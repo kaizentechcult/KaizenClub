@@ -8,7 +8,7 @@ import { Navigate } from "react-router-dom";
 const Home = () => {
   const [user] = useAuthState(auth);
   if (!user) {
-    <Navigate to={"/kaizen-portfolio/login"} />;
+    <Navigate to={"/KaizenClub/login"} />;
   }
   return (
     <div className="flex flex-col justify-center items-center">

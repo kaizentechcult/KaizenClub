@@ -5,7 +5,6 @@ import FormBtn from "../../components/FormBtn/FormBtn";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "../../firebase/config";
 import Loader from "../../components/Loader/Loader";
-import Slide from "../../components/Slider/slider";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -20,7 +19,7 @@ const Login = () => {
     try {
       const res = await signInWithEmailAndPassword(email, password);
       if (res) {
-        navigate("/kaizen-portfolio/home");
+        navigate("/KaizenClub/home");
       }
     } catch (err) {
       setError(err.message);
@@ -56,7 +55,7 @@ const Login = () => {
             </form>
             <p className="text-white">
               Don't Have an Account?{" "}
-              <Link className="text-blue-400" to={"/kaizen-portfolio/signup"}>
+              <Link className="text-blue-400" to={"/KaizenClub/signup"}>
                 Sign Up
               </Link>
             </p>

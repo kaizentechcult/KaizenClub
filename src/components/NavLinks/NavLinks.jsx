@@ -11,7 +11,7 @@ const NavLinks = () => {
   const handleLogout = async () => {
     try {
       await auth.signOut();
-      navigate("/kaizen-portfolio/");
+      navigate("/KaizenClub/");
       console.log("Logout successful!");
     } catch (err) {
       console.error("Error signing out:", err);
@@ -20,10 +20,10 @@ const NavLinks = () => {
 
   return (
     <ul className="flex text-xl gap-3 justify-center items-center sticky">
-      <NavLink text="Home" toLink={"/kaizen-portfolio/home"} />
-      <NavLink text="Members" toLink="/kaizen-portfolio/members" />
-      <NavLink text="Projects" toLink="/kaizen-portfolio/projects" />
-      <NavLink text="Join Us" toLink={"/kaizen-portfolio/join-us"} />
+      <NavLink text="Home" toLink={"/KaizenClub/home"} />
+      <NavLink text="Members" toLink="/KaizenClub/members" />
+      <NavLink text="Projects" toLink="/KaizenClub/projects" />
+      <NavLink text="Join Us" toLink={"/KaizenClub/join-us"} />
       <NavBtn text="Log Out" handleFunc={handleLogout} />
     </ul>
   );
