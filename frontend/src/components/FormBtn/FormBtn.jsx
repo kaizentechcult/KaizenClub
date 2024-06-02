@@ -13,7 +13,7 @@ const FormBtn = ({ text, handlFunc }) => {
 };
 FormBtn.propTypes = {
   text: PropTypes.string.isRequired,
-  toLink: PropTypes.string,
+  handlFunc: PropTypes.string,
 };
 
 export default FormBtn;

@@ -2,12 +2,6 @@ import { motion, useAnimation } from "framer-motion";
 import PropTypes from "prop-types";
 import { useRef, useEffect } from "react";
 
-// type props = {
-//   children: React.ReactNode;
-//   className?: string;
-//   delay?: number;
-// };
-
 export default function Slide({ children, delay, className }) {
   const ref = useRef(null);
   const controls = useAnimation();
@@ -55,7 +49,6 @@ export default function Slide({ children, delay, className }) {
   );
 }
 Slide.propTypes = {
-  // children: PropTypes.string,
   delay: PropTypes.string,
   className: PropTypes.string,
 };

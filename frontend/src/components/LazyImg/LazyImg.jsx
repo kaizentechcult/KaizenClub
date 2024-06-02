@@ -1,5 +1,4 @@
-// LazyImage.js
-import React from 'react';
+import React from "react";
 
 const LazyImg = () => {
   return (
