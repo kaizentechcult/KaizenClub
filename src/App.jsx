@@ -24,14 +24,14 @@ const App = () => {
   };
 
   return (
-    <Router basename="/kaizentechcult.github.io/KaizenClub/">
+    <Router>
       <Routes>
-        <Route path="/" element={<LogIn />} />
-        <Route path="/signup" element={<SignIn />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/members" element={<Members />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/join-us" element={<JoinUs />} />
+        <Route path="/KaizenClub/" element={<LogIn />} />
+        <Route path="/KaizenClub/signup" element={<SignIn />} />
+        <Route path="/KaizenClub/home" element={<Home />} />
+        <Route path="/KaizenClub/members" element={<Members />} />
+        <Route path="/KaizenClub/projects" element={<Projects />} />
+        <Route path="/KaizenClub/join-us" element={<JoinUs />} />
         {/* Optional redirect route for login */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
