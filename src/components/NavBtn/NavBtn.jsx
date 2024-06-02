@@ -8,7 +8,7 @@ const NavBtn = ({ text, handleFunc }) => {
         <button
           type="submit"
           onClick={handleFunc}
-          className=" transition duration-500 rounded-md p-1 hover:text-[#5d5dff] hover:bg-white text-white text-xl"
+          className=" transition duration-500 rounded-md p-1 hover:text-[#5d5dff] hover:bg-white text-white"
         >
           {text}
         </button>

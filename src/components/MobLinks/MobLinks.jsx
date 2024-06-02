@@ -4,9 +4,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../firebase/config";
 import { useNavigate } from "react-router-dom";
 
-const NavLinks = () => {
+const MobLinks = () => {
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
+
+
 
   const handleLogout = async () => {
     try {
@@ -19,7 +21,8 @@ const NavLinks = () => {
   };
 
   return (
-    <ul className="flex text-xl max-md:text-[1rem]  gap-0 justify-evenly items-center sticky">
+    <ul className="flex text-xl max-md:text-[1rem]  gap-0 justify-evenly items-center flex-col absolute bg-[#07030394] backdrop-blur-lg h-[100vh] w-[100%] z-10 text-white left-0 top-0 p-0 m-0">
+
       <NavLink text="Home" toLink={"/KaizenClub/home"} />
       <NavLink text="Members" toLink="/KaizenClub/members" />
       <NavLink text="Projects" toLink="/KaizenClub/projects" />
@@ -29,4 +32,4 @@ const NavLinks = () => {
   );
 };
 
-export default NavLinks;
+export default MobLinks;
