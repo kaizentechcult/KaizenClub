@@ -5,7 +5,6 @@ import { auth } from "../../firebase/config";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Loader from "../../components/Loader/Loader";
 import { Navigate } from "react-router-dom";
-import Slide from "../../components/Slider/slider";
 const Home = () => {
   const [user] = useAuthState(auth);
   if (!user) {
@@ -18,9 +17,7 @@ const Home = () => {
       ) : (
         <>
           <Navbar />
-          <Slide>
-            <Hero />
-          </Slide>
+          <Hero />
         </>
       )}
     </div>

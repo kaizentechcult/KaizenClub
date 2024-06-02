@@ -31,7 +31,7 @@ const Login = () => {
   };
 
   return (
-    <Slide>
+    <>
       <div className="flex items-center justify-center min-h-screen">
         {loading ? (
           <Loader />
@@ -67,7 +67,7 @@ const Login = () => {
         )}
       </div>
       {error && <p className="error-message">{error}</p>}
-    </Slide>
+    </>
   );
 };
 
