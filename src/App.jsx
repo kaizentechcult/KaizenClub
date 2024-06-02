@@ -24,7 +24,7 @@ const App = () => {
   };
 
   return (
-    <Router basename="/kaizentechcult.github.io/kaizen-portfolio/">
+    <Router basename="/kaizentechcult.github.io/KaizenClub/">
       <Routes>
         <Route path="/" element={<LogIn />} />
         <Route path="/signup" element={<SignIn />} />
