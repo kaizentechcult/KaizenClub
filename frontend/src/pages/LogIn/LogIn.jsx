@@ -17,12 +17,9 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(email, password);
     try {
       const res = await signInWithEmailAndPassword(email, password);
-      // console.log(res);
       if (res) {
-        // console.log({ res });
         navigate("/kaizen-portfolio/home");
       }
     } catch (err) {

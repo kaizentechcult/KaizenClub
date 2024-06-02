@@ -24,20 +24,16 @@ const SignIn = () => {
 
       if (res) {
         console.log("user Added");
-        // Clear form after successful registration
-        console.log(user);
-        // setUsername("");
-        // setEmail("");
-        // setPassword("");
-        navigate("/kaizen-portfolio/home"); // Redirect to home
+        setUsername("");
+        setEmail("");
+        setPassword("");
+        navigate("/kaizen-portfolio/home");
       }
     } catch (err) {
       if (error) {
         console.error(error);
       }
-      // Handle specific errors (e.g., display error message to user)
       alert("Registration failed. Please check your details.");
-      // Optionally: navigate to login page based on error type
     }
   };
 
@@ -76,7 +72,7 @@ const SignIn = () => {
           </form>
           <p className="text-white">
             Already Have an Account?{" "}
-            <Link className="text-blue-400" to={"/kaizen-portfolio/login"}>
+            <Link className="text-blue-400" to={"/kaizen-portfolio/"}>
               Login
             </Link>
           </p>

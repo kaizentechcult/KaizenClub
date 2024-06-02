@@ -1,4 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
+import PropTypes from "prop-types";
 import { useRef, useEffect } from "react";
 
 // type props = {
@@ -53,3 +54,8 @@ export default function Slide({ children, delay, className }) {
     </motion.div>
   );
 }
+Slide.propTypes = {
+  // children: PropTypes.string,
+  delay: PropTypes.string,
+  className: PropTypes.string,
+};

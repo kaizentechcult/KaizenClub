@@ -1,13 +1,16 @@
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 import Slide from "../../components/Slider/slider";
 
-const NavBtn = ({ text, toLink }) => {
+const NavBtn = ({ text, handleFunc }) => {
   return (
     <Slide>
       <li>
-        <button className=" transition duration-500 rounded-md p-1 hover:text-[#5d5dff] hover:bg-white text-white text-xl">
-          <Link to={toLink}>{text}</Link>
+        <button
+          type="submit"
+          onClick={handleFunc}
+          className=" transition duration-500 rounded-md p-1 hover:text-[#5d5dff] hover:bg-white text-white text-xl"
+        >
+          {text}
         </button>
       </li>
     </Slide>
@@ -15,7 +18,7 @@ const NavBtn = ({ text, toLink }) => {
 };
 NavBtn.propTypes = {
   text: PropTypes.string,
-  toLink: PropTypes.string,
+  handleFunc: PropTypes.func,
 };
 
 export default NavBtn;
