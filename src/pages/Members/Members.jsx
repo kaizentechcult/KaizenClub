@@ -98,14 +98,7 @@ const Members = () => {
       <Heading text={"Our Team"} />
       <div className="flex m-10 flex-wrap justify-evenly items-center gap-3">
         {membersData.map((member) => (
-            <Member
-              key={member.name}
-              name={member.name}
-              post={member.post}
-              img={member.img}
-              linkedin={member.linkedin}
-              github={member.github}
-            />
+          <Member {...member} />
         ))}
       </div>
     </div>
