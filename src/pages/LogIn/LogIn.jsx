@@ -34,58 +34,21 @@ const Login = () => {
     },
   ];
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   if (password.length < 6) {
-  //     setError("Password Must be atleast 6 characters long");
-  //     return;
-  //   }
-  //   try {
-  //     const res = await signInWithEmailAndPassword(email, password);
-  //     console.log(email, password);
-  //     if(!res){
-  //       setError("Please check your credentials and try again");
-  //     }else (res) => {
-  //       console.log(res.user);
-  //       navigate("/KaizenClub/home");
-  //     }
-  //   } catch (err) {
-  //     console.log(err.message);
-  //   }
-  // // };
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   // Basic input validation (optional, replace with more robust validation)
-  //   if (password.length < 6) {
-  //     setError("Password must be at least 6 characters long");
-  //     return;
-  //   }
-
-  //   try {
-  //     const result = await signInWithEmailAndPassword(email, password);
-  //     if (result.user) {
-  //       console.log("Login successful!");
-  //       navigate("/KaizenClub/home"); // Redirect on successful login
-  //     } else {
-  //       setError("An unexpected error occurred. Please try again.");
-  //     }
-  //   } catch (err) {
-  //     setError(err.message); // Set the error state for display
-  //     console.error("Login failed:", err); // Log the error for debugging
-  //   }
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if(password.length < 6){
+    if (password.length < 6) {
       setError("Password must be at least 6 characters long");
       return;
     }
     try {
-      const res = await signInWithEmailAndPassword(email, password);
-      navigate("/KaizenClub/home");
-      console.log(res)
+      await signInWithEmailAndPassword(email, password);
+      const user = auth.currentUser;
+      if (!user) {
+        setError("Either email or password is wrong");
+        navigate("/KaizenClub/");
+      }else{
+        navigate("/KaizenClub/home");
+      }
     } catch (err) {
       setError(err.message);
     }
