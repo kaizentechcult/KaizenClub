@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="bg-[#242d5e9c] h-14 mt-8 p-2 flex justify-center items-center rounded-full sticky max-md:hidden">
         <NavLinks />
       </div>
-      <div className="NavMenu min-md:hidden w-[90%] m-4">
+      <div className="NavMenu md:hidden w-[90%] m-4">
         <button onClick={handleMenu} className="z-13">
           <MenuIcon />
         </button>

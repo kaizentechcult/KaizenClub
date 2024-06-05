@@ -3,6 +3,10 @@
 import Member from "../../components/Member/Member";
 import Heading from "../../components/Heading/Heading";
 import Navbar from "../../components/Navbar/Navbar";
+import Loader from "../../components/Loader/Loader";
+import { Navigate } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../../firebase/config";
 
 const membersData = [
   {
@@ -92,10 +96,16 @@ const membersData = [
 ];
 
 const Members = () => {
+  const [user, loading] = useAuthState(auth);
+  if (loading) {
+    return <Loader />;
+  }
+  if (!user) {
+    return <Navigate to="/KaizenClub/" replace />;
+  }
   return (
     <div className="flex flex-col justify-center items-center">
       <Navbar />
-      {/* <Heading text={"Our Team"} /> */}
       <div className="flex m-10 flex-wrap justify-evenly items-center gap-3">
         {membersData.map((member) => (
           <Member {...member} />

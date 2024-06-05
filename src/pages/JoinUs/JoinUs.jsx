@@ -7,9 +7,9 @@ import Slide from "../../components/Slider/slider";
 
 const JoinUs = () => {
   const [name, setName] = useState("");
-  const [address, setAddress] = useState("");
+  const [phone, setPhone] = useState("");
   const [why, setWhy] = useState("");
-  const [year, setYear] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,7 +34,7 @@ const JoinUs = () => {
       <Navbar />
       <div className="flex justify-center items-center w-[60%] h-[40rem]">
         <Slide>
-          <div className="w-1/2 bg-gray-800 rounded-lg p-8 space-y-6">
+          <div className="w-[30rem] bg-gray-800 rounded-lg p-8 space-y-6">
             <h2 className="text-center text-3xl text-white">Join Us</h2>
             <form onSubmit={handleSubmit}>
               <div className="form-outer flex flex-col gap-7">
@@ -46,26 +46,28 @@ const JoinUs = () => {
                   Label={"Name"}
                 />
                 <FormInput
-                  textField={"address"}
-                  inpType={"text"}
-                  handleFunc={(e) => setAddress(e.target.value)}
-                  valuein={address}
-                  Label={"Address"}
-                />
-                <FormInput
-                  textField={"why"}
+                  textField={"Tech"}
                   inpType={"text"}
                   handleFunc={(e) => setWhy(e.target.value)}
                   valuein={why}
-                  Label={"Why do you wanna join us."}
+                  Label={"Technologies/Languages you know."}
                 />
                 <FormInput
-                  textField={"year"}
-                  inpType={"text"}
-                  handleFunc={(e) => setYear(e.target.value)}
-                  valuein={year}
-                  Label={"Semester"}
+                  textField={"email"}
+                  inpType={"email"}
+                  handleFunc={(e) => setEmail(e.target.value)}
+                  valuein={email}
+                  Label={"Your email address."}
                 />
+                <FormInput
+                  textField={"phone"}
+                  inpType={"phone"}
+                  handleFunc={(e) => setPhone(e.target.value)}
+                  valuein={phone}
+                  Label={"Phone number"}
+                />
+
+
                 <FormBtn text={"Join Us"} />
               </div>
             </form>

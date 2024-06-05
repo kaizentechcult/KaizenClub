@@ -1,10 +1,20 @@
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Project1 from "/Project1.png";
-import Heading from "../Heading/Heading";
 import Navbar from "../Navbar/Navbar";
 import Slide from "../Slider/slider";
+import Loader from "../Loader/Loader";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../../firebase/config";
+import { Navigate } from "react-router-dom";
 
 const Projects = () => {
+  const [user, loading] = useAuthState(auth);
+  if (loading) {
+    return <Loader />;
+  }
+  if (!user) {
+    return <Navigate to="/KaizenClub/" replace />;
+  }
   return (
     <div className="flex flex-col justify-center items-center">
       <Navbar />

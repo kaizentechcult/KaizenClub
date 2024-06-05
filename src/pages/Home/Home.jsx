@@ -3,21 +3,21 @@ import Hero from "../../components/Hero/Hero";
 import Navbar from "../../components/Navbar/Navbar";
 import { auth } from "../../firebase/config";
 import { useAuthState } from "react-firebase-hooks/auth";
-import Loader from "../../components/Loader/Loader";
 import { Navigate } from "react-router-dom";
+import Loader from "../../components/Loader/Loader";
+
 const Home = () => {
-  const [user] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
+  if (loading) {
+    return <Loader />;
+  }
   if (!user) {
-    <Navigate to={"/KaizenClub/login"} />;
+    return <Navigate to="/KaizenClub/" replace />;
   }
   return (
     <div className="flex flex-col justify-center items-center">
-      {
-        <>
-          <Navbar />
-          <Hero />
-        </>
-      }
+      <Navbar />
+      <Hero />
     </div>
   );
 };
