@@ -2,17 +2,28 @@ import MobLinks from "../MobLinks/MobLinks";
 import NavLinks from "../NavLinks/NavLinks";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import Logo from "../Logo/Logo";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const handleMenu = () => {
     document.querySelector(".MobMenu").classList.toggle("hidden");
   };
+
   const handleClose = () => {
     document.querySelector(".close").style.display = "none";
   };
+
   return (
     <>
-      <div className="bg-[#242d5e9c] h-14 mt-8 p-2 flex justify-center items-center rounded-full sticky max-md:hidden">
+      <div className="bg-[#1e1f42c3] backdrop-blur-[10px] gap-4 p-4 fixed h-16 items-center w-full z-50 hidden md:flex">
+        {" "}
+        <button onClick={() => <Link to="KaizenClub/home" />}>
+          <img
+            className="w-10 h-10 bg-white p-1  rounded-full"
+            src={"Logo2.svg"}
+          />
+        </button>
         <NavLinks />
       </div>
       <div className="NavMenu md:hidden w-[90%] m-4">
@@ -33,5 +44,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// max-md:m-0 max-md:rounded-none max-md:text-[0.5rem] max-md:w-[100%] max-md:justify-evenly max-md:flex-col

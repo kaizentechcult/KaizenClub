@@ -14,6 +14,7 @@ const membersData = [
     post: "Founder",
     img: "Shree.jpg",
     linkedin: "https://www.linkedin.com/in/sreehithathati03",
+    github: "https://github.com/sreehithathati03",
   },
   {
     name: "Krish",
@@ -39,7 +40,7 @@ const membersData = [
     name: "Manisha",
     post: "Member",
     img: "Manisha.jpg",
-    linkedin: "https://www.linkedin.com/in/manisha-singh-2994b1294",
+    linkedin: "https://www.linkedin.com/in/manishakumari21",
   },
   {
     name: "Ayush",
@@ -104,14 +105,16 @@ const Members = () => {
     return <Navigate to="/KaizenClub/" replace />;
   }
   return (
-    <div className="flex flex-col justify-center items-center">
+    <>
       <Navbar />
-      <div className="flex m-10 flex-wrap justify-evenly items-center gap-3">
-        {membersData.map((member) => (
-          <Member {...member} />
-        ))}
+      <div className="pt-12">
+        <div className="flex m-10 flex-wrap justify-evenly items-center gap-3">
+          {membersData.map((member, index) => (
+            <Member key={index} {...member} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

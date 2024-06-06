@@ -19,7 +19,7 @@ const NavLinks = () => {
   };
 
   return (
-    <ul className="flex text-xl max-md:text-[1rem]  gap-0 justify-evenly items-center sticky">
+    <ul className="flex text-xl max-md:text-[1rem]  gap-8 justify-evenly items-center sticky ml-4">
       <NavLink text="Home" toLink={"/KaizenClub/home"} />
       <NavLink text="Members" toLink="/KaizenClub/members" />
       <NavLink text="Projects" toLink="/KaizenClub/projects" />

@@ -1,12 +1,13 @@
 import React, { Suspense, lazy } from "react";
 import Slide from "../Slider/slider";
 import "../Hero/Hero.css";
+import Loader from "../Loader/Loader";
 
 const LazyImage = lazy(() => import("../LazyImg/LazyImg"));
 
 const Hero = () => {
   return (
-    <div className="hero mt-12">
+    <div className="hero mt-0 md:h-auto md:mt-12">
       <div className="blur1 bg-[#7e44d8] h-64 w-64 blur-[50px] absolute -right-32 top-[10rem] rounded-full -z-10 hidden lg:block"></div>
       <div className="blur2 bg-[#066093] h-64 w-64 blur-[50px] absolute left-[-10rem] top-[25rem] rounded-full -z-10 hidden lg:block"></div>
       <Slide>
@@ -23,7 +24,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="right-main flex-1">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loader/>}>
               <LazyImage />
             </Suspense>
           </div>

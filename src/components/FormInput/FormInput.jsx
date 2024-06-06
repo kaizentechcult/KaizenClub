@@ -13,6 +13,7 @@ const FormInput = ({ textField, inpType, handleFunc, value, Label }) => {
           placeholder={Label}
           id={textField}
           onChange={handleFunc}
+          autoComplete="off"
         />
       </div>
     </Slide>

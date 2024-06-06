@@ -9,6 +9,7 @@ import { Navigate } from "react-router-dom";
 
 const Projects = () => {
   const [user, loading] = useAuthState(auth);
+  // console.log(user);
   if (loading) {
     return <Loader />;
   }
@@ -16,19 +17,21 @@ const Projects = () => {
     return <Navigate to="/KaizenClub/" replace />;
   }
   return (
-    <div className="flex flex-col justify-center items-center">
+    <>
       <Navbar />
-      <Slide>
-        <div className="flex  flex-wrap  justify-evenly items-center m-12">
-          <ProjectCard image={Project1} />
-          <ProjectCard image={Project1} />
-          <ProjectCard image={Project1} />
-          <ProjectCard image={Project1} />
-          <ProjectCard image={Project1} />
-          <ProjectCard image={Project1} />
-        </div>
-      </Slide>
-    </div>
+      <div className=" pt-12">
+        <Slide>
+          <div className="flex  flex-wrap  justify-evenly items-center m-12">
+            <ProjectCard image={Project1} />
+            <ProjectCard image={Project1} />
+            <ProjectCard image={Project1} />
+            <ProjectCard image={Project1} />
+            <ProjectCard image={Project1} />
+            <ProjectCard image={Project1} />
+          </div>
+        </Slide>
+      </div>
+    </>
   );
 };
 

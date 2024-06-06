@@ -3,17 +3,15 @@ import Slide from "../../components/Slider/slider";
 
 const NavBtn = ({ text, handleFunc }) => {
   return (
-    <Slide>
       <li>
         <button
           type="submit"
           onClick={handleFunc}
-          className=" transition duration-500 rounded-md p-1 hover:text-[#5d5dff] hover:bg-white text-white"
+          className=" transition duration-500 rounded-full p-1 h-12 hover:text-[#5d5dff] hover:bg-white text-white"
         >
           {text}
         </button>
       </li>
-    </Slide>
   );
 };
 NavBtn.propTypes = {

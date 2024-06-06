@@ -15,7 +15,7 @@ const SignIn = () => {
 
   const navigate = useNavigate();
 
-  const [createUserWithEmailAndPassword, user, loading, error] =
+  const [createUserWithEmailAndPassword, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
 
   const handleSubmit = async (e) => {
@@ -23,9 +23,11 @@ const SignIn = () => {
 
     try {
       const res = await createUserWithEmailAndPassword(email, password);
-
+      const user = auth.currentUser;
+console.log(user)
       if (res) {
         console.log("user Added");
+        user.displayName = username;
         setUsername("");
         setEmail("");
         setPassword("");
@@ -45,7 +47,6 @@ const SignIn = () => {
         <Loader />
       ) : (
         <Slide>
-          {/* <div className="w-full max-w-md p-8 space-y-6 bg-gray-800 shadow-md rounded-md flex flex-col justify-center items-center"> */}
           <div className=" w-[27rem] max-md:w-[20rem] max-md:h-auto bg-gray-800 h-[34rem] p-8 space-y-6  shadow-md rounded-lg flex flex-col justify-center items-center">
 
             <Logo />

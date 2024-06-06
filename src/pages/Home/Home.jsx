@@ -15,10 +15,12 @@ const Home = () => {
     return <Navigate to="/KaizenClub/" replace />;
   }
   return (
-    <div className="flex flex-col justify-center items-center">
+    <>
       <Navbar />
-      <Hero />
-    </div>
+      <div className="md:pt-12 ">
+        <Hero />
+      </div>
+    </>
   );
 };
 

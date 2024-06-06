@@ -6,14 +6,12 @@ const NavLink = ({ text, toLink }) => {
   return (
     <li>
       {" "}
-      <Slide>
         <Link
           to={toLink}
-          className="hover:text-white hover:bg-gray-600 p-3 rounded-full duration-500 "
+          className="hover:text-white   duration-500 "
         >
           {text}
         </Link>{" "}
-      </Slide>
     </li>
   );
 };

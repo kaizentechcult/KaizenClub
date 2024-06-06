@@ -8,8 +8,6 @@ const MobLinks = () => {
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
 
-
-
   const handleLogout = async () => {
     try {
       await auth.signOut();
@@ -21,12 +19,12 @@ const MobLinks = () => {
   };
 
   return (
-    <ul className="flex text-xl max-md:text-[1rem]  gap-0 justify-evenly items-center flex-col absolute bg-[#07030394] backdrop-blur-lg h-[100vh] w-[100%] z-10 text-white left-0 top-0 p-0 m-0">
-
+    <ul className="flex text-xl max-md:text-[1rem]  gap-0 justify-evenly items-center flex-col absolute bg-[#000000] h-[100vh] w-[100%] z-10 text-white left-0 top-0 p-0 m-0">
       <NavLink text="Home" toLink={"/KaizenClub/home"} />
       <NavLink text="Members" toLink="/KaizenClub/members" />
       <NavLink text="Projects" toLink="/KaizenClub/projects" />
       <NavLink text="Join Us" toLink={"/KaizenClub/join-us"} />
+      <NavLink text="Profile" toLink={"/KaizenClub/Profile"} />
       <NavBtn text="Log Out" handleFunc={handleLogout} />
     </ul>
   );

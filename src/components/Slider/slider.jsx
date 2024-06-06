@@ -2,7 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import PropTypes from "prop-types";
 import { useRef, useEffect } from "react";
 
-export default function Slide({ children, delay, className }) {
+export default function Slide({ children, delay, className, dirction }) {
   const ref = useRef(null);
   const controls = useAnimation();
 
@@ -35,10 +35,10 @@ export default function Slide({ children, delay, className }) {
       }}
       transition={{
         type: "spring",
-        duration: 0.1,
+        duration: 10,
         damping: 10,
         delay: delay,
-        stiffness: 72,
+        stiffness: 80,
       }}
       initial="hidden"
       animate={controls}
