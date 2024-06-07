@@ -23,11 +23,11 @@ const Projects = () => {
         <Slide>
           <div className="flex  flex-wrap  justify-evenly items-center m-12">
             <ProjectCard image={Project1} />
+            {/* <ProjectCard image={Project1} />
             <ProjectCard image={Project1} />
             <ProjectCard image={Project1} />
             <ProjectCard image={Project1} />
-            <ProjectCard image={Project1} />
-            <ProjectCard image={Project1} />
+            <ProjectCard image={Project1} /> */}
           </div>
         </Slide>
       </div>

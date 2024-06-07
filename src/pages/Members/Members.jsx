@@ -58,7 +58,7 @@ const membersData = [
     name: "Aditya",
     post: "Member",
     img: "Aditya.png",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/aditya-kumar-36454a310/",
   },
   {
     name: "Kanak",
