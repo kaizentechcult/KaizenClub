@@ -14,26 +14,26 @@ import Home from "./pages/Home/Home";
 import Members from "./pages/Members/Members.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import JoinUs from "./pages/JoinUs/JoinUs.jsx";
-import PrivateRoute from "./components/PrivateRoute/PrivateRoute.jsx";
+import Loader from "./components/Loader/Loader.jsx";
 
 const App = () => {
-  const [user] = useAuthState(auth);
-
-  const handleLoginRedirect = async () => {
-    return user ? "/KaizenClub/home" : "/KaizenClub/login"; // Redirect to appropriate route
-  };
+  const [loading, user] = useAuthState(auth);
 
   return (
     <Router>
       <Routes>
-        <Route path="/KaizenClub/" element={<LogIn />} />
+        <Route
+          path="/KaizenClub/"
+          element={
+            user ? <Navigate to="/KaizenClub/home" replace /> : <LogIn />
+          }
+        />
         <Route path="/KaizenClub/signup" element={<SignIn />} />
         <Route path="/KaizenClub/home" element={<Home />} />
         <Route path="/KaizenClub/members" element={<Members />} />
         <Route path="/KaizenClub/projects" element={<Projects />} />
         <Route path="/KaizenClub/join-us" element={<JoinUs />} />
-        {/* Optional redirect route for login */}
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/KaizenClub" replace />} />
       </Routes>
     </Router>
   );
