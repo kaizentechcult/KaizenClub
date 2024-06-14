@@ -26,17 +26,19 @@ const Navbar = () => {
         </button>
         <NavLinks />
       </div>
-      <div className="NavMenu md:hidden w-[90%] m-4">
-        <button onClick={handleMenu} className="z-13">
-          <MenuIcon />
-        </button>
-        <div className="MobMenu hidden">
-          <div className="close">
-            <button onClick={handleClose}>
-              <CloseIcon />
-            </button>
+      <div className="p-4">
+        <div className="NavMenu md:hidden  w-full h-12 bg-white rounded-xl flex  justify-center items-center">
+          <button onClick={handleMenu} className="z-13">
+            <MenuIcon />
+          </button>
+          <div className="MobMenu hidden">
+            <div className="close ">
+              <button onClick={handleClose}>
+                <CloseIcon />
+              </button>
+            </div>
+            <MobLinks />
           </div>
-          <MobLinks />
         </div>
       </div>
     </>

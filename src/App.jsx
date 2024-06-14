@@ -14,10 +14,9 @@ import Home from "./pages/Home/Home";
 import Members from "./pages/Members/Members.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import JoinUs from "./pages/JoinUs/JoinUs.jsx";
-import Loader from "./components/Loader/Loader.jsx";
 
 const App = () => {
-  const [loading, user] = useAuthState(auth);
+  const [ user] = useAuthState(auth);
 
   return (
     <Router>
