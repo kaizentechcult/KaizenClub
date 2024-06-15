@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <>
     <div className="rounded-full">
-      <img src="LogoK.svg" className="w-20 h-20" />
+      <img src="LogoK.svg" className="w-8 h-8" />
     </div>
       <p className="text-white text-2xl font-bold">Kaizen Society</p>
     </>
