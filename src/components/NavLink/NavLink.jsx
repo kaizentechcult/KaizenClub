@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import Slide from "../../components/Slider/slider";
 
 const NavLink = ({ text, toLink }) => {
   return (

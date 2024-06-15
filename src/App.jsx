@@ -1,38 +1,26 @@
 import "./index.css";
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "./firebase/config.jsx";
-import LogIn from "./pages/LogIn/LogIn.jsx";
-import SignIn from "./pages/SignUp/SignUp.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Members from "./pages/Members/Members.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import JoinUs from "./pages/JoinUs/JoinUs.jsx";
 
 const App = () => {
-  const [ user] = useAuthState(auth);
-
   return (
     <Router>
       <Routes>
         <Route
-          path="/KaizenClub/"
+          path="/KaizenClub"
           element={
-            user ? <Navigate to="/KaizenClub/home" replace /> : <LogIn />
+            <>
+              <Home />
+              <Members />
+              <Projects />
+              <JoinUs />
+            </>
           }
         />
-        <Route path="/KaizenClub/signup" element={<SignIn />} />
-        <Route path="/KaizenClub/home" element={<Home />} />
-        <Route path="/KaizenClub/members" element={<Members />} />
-        <Route path="/KaizenClub/projects" element={<Projects />} />
-        <Route path="/KaizenClub/join-us" element={<JoinUs />} />
-        <Route path="*" element={<Navigate to="/KaizenClub" replace />} />
       </Routes>
     </Router>
   );

@@ -1,5 +1,4 @@
 import React, { Suspense, lazy } from "react";
-import Slide from "../Slider/slider";
 import "../Hero/Hero.css";
 import Loader from "../Loader/Loader";
 
@@ -10,7 +9,6 @@ const Hero = () => {
     <div className="hero mt-0 md:h-auto md:mt-12">
       <div className="blur1 bg-[#7e44d8] h-64 w-64 blur-[50px] absolute -right-32 top-[10rem] rounded-full -z-10 hidden lg:block"></div>
       <div className="blur2 bg-[#066093] h-64 w-64 blur-[50px] absolute left-[-10rem] top-[25rem] rounded-full -z-10 hidden lg:block"></div>
-      <Slide>
         <div className="outer flex flex-col items-center lg:flex-row">
           <div className="main flex-1">
             <h1 className="text-7xl text-center text-white">
@@ -25,11 +23,10 @@ const Hero = () => {
           </div>
           <div className="right-main flex-1">
             <Suspense fallback={<Loader/>}>
-              <LazyImage />
+              <LazyImage className={`object-cover`}/>
             </Suspense>
           </div>
         </div>
-      </Slide>
     </div>
   );
 };
