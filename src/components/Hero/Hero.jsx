@@ -22,9 +22,16 @@ const Hero = () => {
           </p>
         </div>
         <div className="right-main flex-1">
-          <Suspense fallback={<Loader />}>
+          <img
+            className="lg:h-[85vh] rounded-3xl scale-75 object-cover -z-20"
+            src="hero.jpg"
+            alt="img"
+            loading="lazy"
+          />
+          
+          {/* <Suspense fallback={<Loader />}>
             <LazyImage className={`object-cover`} />
-          </Suspense>
+          </Suspense> */}
         </div>
       </div>
     </div>
