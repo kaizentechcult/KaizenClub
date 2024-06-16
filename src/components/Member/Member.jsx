@@ -4,12 +4,15 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Member = ({ name, post, img, linkedin, github }) => {
   return (
-    <div className="card bg-slate-800 rounded-[1rem] w-fit  p-8 flex-col items-center justify-center hover:bg-slate-700 transition-all duration-300">
-      <img src={img} alt="img" className="rounded-full w-64 m-auto" />
-      <div className="text-center pt-10 text-white">
+    <div className="flex flex-col h-[30rem] pb-10 md:pb-0 justify-evenly md:hover:bg-slate-800 w-full sm:w-2/5 lg:w-[30%] border border-gray-800 m-1 rounded-lg">
+      <div>
+        <img src={img} alt="img" className="rounded-full w-[12rem] m-auto" />
+      </div>
+      <div className="text-center text-white flex flex-col gap-4">
         <p className="font-semibold">{name}</p>
+        <p className="font-semibold">Coding Club</p>
         <p className="text-gray-300">{post}</p>
-        <div className="flex gap-2 justify-center">
+        <div className="flex gap-10 justify-center">
           {github && (
             <a href={github}>
               <GitHubIcon />

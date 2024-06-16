@@ -51,10 +51,12 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="fixed right-0 p-8">
-      <button className="bg-[#25257c69] backdrop-blur-lg p-3 rounded-lg text-xl text-white z-10" >
-        <a href="https://forms.gle/dAGYv4SLC5wkFvxq9">Join Us</a>
-      </button>
+    <div className="md:absolute fixed h-full">
+      <div className="sticky top-0 right-0 p-4 md:p-8">
+        <button className="bg-[#25257c69] md:w-32 backdrop-blur-lg p-2 md:p-3 rounded-lg md:text-xl text-white z-10">
+          <a href="https://forms.gle/dAGYv4SLC5wkFvxq9">Join Us</a>
+        </button>
+      </div>
     </div>
   );
 };
