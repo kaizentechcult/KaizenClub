@@ -15,20 +15,19 @@ const Footer = () => {
       <div className="w-full h-[2px] bg-black"></div>
       <div className=" flex gap-10">
         <a href="https://github.com/kaizentechcult">
-          <GitHubIcon  className="scale-125"/>
+          <GitHubIcon className="scale-125" />
         </a>
         <a href="https://github.com/kaizentechcult">
-          <XIcon  className="scale-125"/>
+          <XIcon className="scale-125" />
         </a>
         <a href="https://www.linkedin.com/company/kaizen-technical-society/">
-          <LinkedInIcon  className="scale-125"/>
+          <LinkedInIcon className="scale-125" />
         </a>
         <a href="https://github.com/kaizentechcult">
-          <InstagramIcon  className="scale-125" />
+          <InstagramIcon className="scale-125" />
         </a>
       </div>
     </div>
-    // </div>
   );
 };
 
