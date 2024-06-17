@@ -17,9 +17,9 @@ const Footer = () => {
         <a href="https://github.com/kaizentechcult">
           <GitHubIcon className="scale-125" />
         </a>
-        <a href="https://github.com/kaizentechcult">
+        {/* <a href="https://github.com/kaizentechcult">
           <XIcon className="scale-125" />
-        </a>
+        </a> */}
         <a href="https://www.linkedin.com/company/kaizen-technical-society/">
           <LinkedInIcon className="scale-125" />
         </a>
