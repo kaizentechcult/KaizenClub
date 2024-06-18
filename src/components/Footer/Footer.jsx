@@ -23,7 +23,7 @@ const Footer = () => {
         <a href="https://www.linkedin.com/company/kaizen-technical-society/">
           <LinkedInIcon className="scale-125" />
         </a>
-        <a href="https://github.com/kaizentechcult">
+        <a href="https://www.instagram.com/kcc_technical_society">
           <InstagramIcon className="scale-125" />
         </a>
       </div>
