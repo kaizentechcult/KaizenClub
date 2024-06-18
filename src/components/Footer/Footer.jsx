@@ -14,16 +14,16 @@ const Footer = () => {
       </div>
       <div className="w-full h-[2px] bg-black"></div>
       <div className=" flex gap-10">
-        <a href="https://github.com/kaizentechcult">
+        <a aria-label="Github" href="https://github.com/kaizentechcult">
           <GitHubIcon className="scale-125" />
         </a>
         {/* <a href="https://github.com/kaizentechcult">
           <XIcon className="scale-125" />
         </a> */}
-        <a href="https://www.linkedin.com/company/kaizen-technical-society/">
+        <a aria-label="LinkedIn" href="https://www.linkedin.com/company/kaizen-technical-society/">
           <LinkedInIcon className="scale-125" />
         </a>
-        <a href="https://www.instagram.com/kcc_technical_society">
+        <a aria-label="Instagram" href="https://www.instagram.com/kcc_technical_society">
           <InstagramIcon className="scale-125" />
         </a>
       </div>

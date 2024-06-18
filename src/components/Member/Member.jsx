@@ -14,12 +14,12 @@ const Member = ({ name, post, img, linkedin, github }) => {
         <p className="text-gray-300">{post}</p>
         <div className="flex gap-10 justify-center">
           {github && (
-            <a href={github}>
+            <a aria-label="Github" href={github}>
               <GitHubIcon />
             </a>
           )}
           {linkedin && (
-            <a href={linkedin}>
+            <a aria-label="Linkedin" href={linkedin}>
               <LinkedInIcon />
             </a>
           )}

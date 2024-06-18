@@ -12,7 +12,7 @@ const ProjectCard = ({ image }) => {
         quo animi quaerat iure tempore?
       </p>
       <button className="text-[#5d5dff] bg-gray-700 p-4 rounded-md hover:bg-gray-900 hover:font-bold mt-3 transition-all duration-300">
-        <a href="https://adistanautiyal.github.io/untalked/wellnessinsight.html">
+        <a aria-label="Project" href="https://adistanautiyal.github.io/untalked/wellnessinsight.html">
           Visit
         </a>
       </button>
