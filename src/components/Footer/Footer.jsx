@@ -1,7 +1,7 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import XIcon from "@mui/icons-material/X";
+// import XIcon from "@mui/icons-material/X";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
