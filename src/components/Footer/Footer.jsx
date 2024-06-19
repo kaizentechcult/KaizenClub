@@ -5,10 +5,10 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
   return (
-    <div className="w-full flex flex-col bg-[#141941] py-12 rounded-t-xl items-center justify-center text-[#a2c9ff] gap-10">
+    <div className="w-full flex flex-col bg-gray-800 py-12 rounded-t-xl items-center justify-center text-[#a2c9ff] gap-10">
       <div className="flex flex-col justify-center items-center">
-        <div className="h-32 w-32 flex justify-center items-center bg-[#dfecff] rounded-full">
-          <img src="LogoK.svg" alt="" className="w-10" />
+        <div className="h-20 w-20 flex justify-center items-center bg-[#dfecff] rounded-full">
+          <img src="LogoK.svg" alt="" className="w-8" />
         </div>
         <br />
         <p className="text-xl font-bold">Kaizen Tech Club</p>
