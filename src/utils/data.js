@@ -78,10 +78,10 @@ export const membersData = [
     img: "Kanak.jpg",
     linkedin: "https://www.linkedin.com/in/kanak-saini-524420283",
   },
-  {
-    name: "Sanskriti",
-    post: "Member",
-    img: "Sanskriti.jpg",
-    linkedin: "https://www.linkedin.com/in/sanskriti-srivastava-b3876b298",
-  },
+  // {
+  //   name: "Sanskriti",
+  //   post: "Member",
+  //   img: "Sanskriti.jpg",
+  //   linkedin: "https://www.linkedin.com/in/sanskriti-srivastava-b3876b298",
+  // },
 ];

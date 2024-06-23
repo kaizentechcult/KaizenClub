@@ -17,7 +17,7 @@ const Home = () => {
             extra={"text-[#A2C9FF] p-4 hover:text-white mb-0 p-8"}
           />
         </Link>
-        {/* <ArrowForwardIcon/> */}
+        {/* <ArrowForwardIcon/>  */}
       </div>
     </div>
   );
