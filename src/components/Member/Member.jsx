@@ -1,12 +1,20 @@
 import PropTypes from "prop-types";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Member = ({ name, post, img, linkedin, github }) => {
   return (
     <div className="flex flex-col h-[30rem] pb-10 md:pb-0 justify-evenly md:hover:bg-slate-800 w-full sm:w-2/5 lg:w-[30%] border border-gray-800 m-1 rounded-lg">
-      <div>
-        <img src={img} alt="img" className="rounded-full w-[12rem] m-auto" />
+      <div className="flex justify-center items-center">
+        <LazyLoadImage
+          src={img}
+          alt="img"
+          effect="blur"
+          width={192}
+          className="rounded-full"
+        />
       </div>
       <div className="text-center text-white flex flex-col gap-4">
         <p className="font-semibold">{name}</p>

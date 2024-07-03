@@ -1,5 +1,7 @@
 import React from "react";
 import "../Hero/Hero.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Hero = () => {
   return (
@@ -15,8 +17,31 @@ const Hero = () => {
           mentorship to enhance their coding ability.
         </p>
       </div>
-      <div className="right w-full flex justify-center rounded-3xl">
-        <img src="hero.jpg " className="scale-75 rounded-xl" alt="img" />
+      <div className="right w-full flex justify-center rounded-3xl items-center md:hidden">
+        <LazyLoadImage
+          className="rounded-2xl"
+          src="hero.jpg"
+          alt="img"
+          effect="blur"
+          width={300}
+          wrapperProps={{
+            // If you need to, you can tweak the effect transition using the wrapper style.
+            style: { transitionDelay: "1s" },
+          }}
+        />
+      </div>
+      <div className="right w-full md:flex justify-center rounded-3xl items-center hidden">
+        <LazyLoadImage
+          className="rounded-2xl"
+          src="hero.jpg"
+          alt="img"
+          effect="blur"
+          width={500}
+          wrapperProps={{
+            // If you need to, you can tweak the effect transition using the wrapper style.
+            style: { transitionDelay: "1s" },
+          }}
+        />
       </div>
     </div>
   );
