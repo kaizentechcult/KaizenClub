@@ -39,20 +39,6 @@ export const membersData = [
     linkedin: "https://www.linkedin.com/in/adista-nautiyal-3011a7294",
   },
   {
-    name: "Avinash",
-    post: "Member",
-    img: "Avinash.jpg",
-    linkedin: "https://www.linkedin.com/in/avinash-bajpai",
-    github: "https://github.com/Devavinashh",
-  },
-  {
-    name: "Anurag",
-    post: "Member",
-    img: "Anurag.jpg",
-    linkedin: "https://www.linkedin.com/in/anurag-raj-821214216",
-    github: "https://github.com/Anurag07-07",
-  },
-  {
     name: "Shivansh",
     post: "Member",
     img: "Shivansh.jpg",
@@ -78,10 +64,17 @@ export const membersData = [
     img: "Kanak.jpg",
     linkedin: "https://www.linkedin.com/in/kanak-saini-524420283",
   },
-  // {
-  //   name: "Sanskriti",
-  //   post: "Member",
-  //   img: "Sanskriti.jpg",
-  //   linkedin: "https://www.linkedin.com/in/sanskriti-srivastava-b3876b298",
-  // },
+  {
+    name: "Shivang Shukla",
+    post: "Member",
+    img: "Shivang.jpg",
+    linkedin: "https://www.linkedin.com/in/shivang-shukla-6212012b2/",
+  },
+  {
+    name: "Shivangi Bhartiya",
+    post: "Member",
+    img: "Shivangi.jpg",
+    linkedin: "https://www.linkedin.com/in/shivangi-bhartiya-39336b294/",
+    github: "https://github.com/ShivangiBhartiya",
+  },
 ];

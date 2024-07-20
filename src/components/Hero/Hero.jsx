@@ -5,7 +5,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Hero = () => {
   return (
-    <div className="hero h-screen flex flex-col lg:flex-row">
+    <div className="hero h-screen flex flex-col lg:flex-row mt-[-5rem]">
       <div className="left w-full h-screen flex flex-col md:gap-20 justify-center">
         <h1 className="text-4xl md:text-7xl text-[#a2c9ff] font-bold text-center lg:p-0 p-12">
           Kaizen Technical Society
