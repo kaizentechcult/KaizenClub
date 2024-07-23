@@ -47,18 +47,27 @@
 
 // export default Navbar;
 
-import React from "react";
+// import React from "react";
+
+// const Navbar = () => {
+//   return (
+//     // <div className="absolute z-10 h-full">
+//       <div className="sticky top-0 right-0 p-4 md:p-8">
+//         <button className="bg-[#25257c69] md:w-32 backdrop-blur-lg p-2 md:p-3 rounded-lg md:text-xl text-white z-10">
+//           <a aria-label="Google-From" href="https://forms.gle/dAGYv4SLC5wkFvxq9">Join Us</a>
+//         </button>
+//       </div>
+//     // </div>
+//   );
+// };
+
+// export default Navbar;
+import React from 'react'
 
 const Navbar = () => {
   return (
-    // <div className="absolute z-10 h-full">
-      <div className="sticky top-0 right-0 p-4 md:p-8">
-        <button className="bg-[#25257c69] md:w-32 backdrop-blur-lg p-2 md:p-3 rounded-lg md:text-xl text-white z-10">
-          <a aria-label="Google-From" href="https://forms.gle/dAGYv4SLC5wkFvxq9">Join Us</a>
-        </button>
-      </div>
-    // </div>
-  );
-};
+    <div></div>
+  )
+}
 
-export default Navbar;
+export default Navbar
