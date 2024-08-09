@@ -1,13 +1,13 @@
 import React from "react";
-import img1 from "/Team/KotlinGFG/img1.webp";
-import img2 from "/Team/KotlinGFG/img2.webp";
-import img3 from "/Team/KotlinGFG/img3.webp";
-import img4 from "/Team/KotlinGFG/img4.webp";
-import img5 from "/Team/KotlinGFG/img5.webp";
-import img6 from "/Team/KotlinGFG/img6.webp";
-import img7 from "/Team/KotlinGFG/img7.webp";
-import img8 from "/Team/KotlinGFG/img8.webp";
-import img9 from "/Team/KotlinGFG/img9.webp";
+import img1 from "../../../../../public/Team/KotlinGFG/img1.webp";
+import img2 from "../../../../../public/Team/KotlinGFG/img2.webp";
+import img3 from "../../../../../public/Team/KotlinGFG/img3.webp";
+import img4 from "../../../../../public/Team/KotlinGFG/img4.webp";
+import img5 from "../../../../../public/Team/KotlinGFG/img5.webp";
+import img6 from "../../../../../public/Team/KotlinGFG/img6.webp";
+import img7 from "../../../../../public/Team/KotlinGFG/img7.webp";
+import img8 from "../../../../../public/Team/KotlinGFG/img8.webp";
+import img9 from "../../../../../public/Team/KotlinGFG/img9.webp";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
