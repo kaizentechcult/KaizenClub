@@ -3,11 +3,11 @@ import Hero from "../../components/Hero/Hero";
 import Members from "../Members/Members";
 import { Link } from "react-router-dom";
 import Heading from "../../components/Heading/Heading";
-// import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="px-64 overflow-hidden">
       <Hero />
       {/* <Members /> */}
       {/* <div className="flex justify-center items-center">

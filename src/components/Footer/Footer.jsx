@@ -7,7 +7,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Footer = () => {
   return (
-    <div className="w-full flex flex-col bg-gray-800 py-12 rounded-t-xl items-center justify-center text-[#a2c9ff] gap-10">
+    <div className="w-full flex flex-col bg-gray-800 py-12 rounded-t-xl items-center justify-center text-[#a2c9ff] gap-10 absolute bottom-0">
       <div className="flex flex-col justify-center items-center">
         <div className="h-20 w-20 flex justify-center items-center bg-[#dfecff] rounded-full">
           <LazyLoadImage src="LogoK.svg" alt="" className="w-8"/>
