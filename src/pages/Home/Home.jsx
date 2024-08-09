@@ -4,9 +4,9 @@ import Members from "../Members/Members";
 
 const Home = () => {
   return (
-    <div className="px-64">
+    <div className="md:px-64 px-4">
       <Hero />
-      
+
       {/* <Members /> */}
     </div>
   );

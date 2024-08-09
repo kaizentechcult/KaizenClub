@@ -8,24 +8,24 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const Footer = () => {
   return (
     <>
-      <div className="px-64 flex justify-between py-4 bg-[#1F2937] text-white">
+      <div className="md:px-64 px-4 flex md:flex-row flex-col justify-center items-center md:justify-between py-4 bg-[#1F2937] text-white gap-4 md:gap-0">
         <div>2024 Kaizen Club </div>
         <div>Coded with ❤ and ☕ by Kaizen Team</div>
         <div className=" flex gap-10">
           <a target="_blank" aria-label="Github" href="https://github.com/kaizentechcult">
-            <GitHubIcon className="scale-125" />
+            <GitHubIcon className="" />
           </a>
           <a target="_blank"
             aria-label="LinkedIn"
             href="https://www.linkedin.com/company/kaizen-technical-society/"
           >
-            <LinkedInIcon className="scale-125" />
+            <LinkedInIcon className="" />
           </a>
           <a target="_blank"
             aria-label="Instagram"
             href="https://www.instagram.com/kcc_technical_society"
           >
-            <InstagramIcon className="scale-125" />
+            <InstagramIcon className="" />
           </a>
         </div>
       </div>

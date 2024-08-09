@@ -5,7 +5,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Member = ({ name, post, img, linkedin, github }) => {
   return (
-    <div className="flex items-center p-8 sm:w-2/5 lg:w-[31%] border border-gray-800 m-4 rounded-lg">
+    <div className="flex items-center p-8 sm:w-2/5 w-full lg:w-[31%] border border-gray-800 m-4 rounded-lg">
       <div className="flex items-center">
         <LazyLoadImage
           src={img}
@@ -15,7 +15,7 @@ const Member = ({ name, post, img, linkedin, github }) => {
           className="rounded-full"
         />
       </div>
-      <div className="text-center flex flex-col gap-2 items-center justify-center w-full">
+      <div className="text-center flex flex-col gap-2 md:items-center justify-end md:justify-center w-full">
         <p className="font-semibold">{name}</p>
         {/* <p className="font-semibold">Coding Club</p> */}
         <p className="text-gray-900">{post}</p>
