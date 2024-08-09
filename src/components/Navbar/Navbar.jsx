@@ -2,8 +2,8 @@ import React from "react";
 
 const navliks = [
   ["Home", "/KaizenClub/"],
-  ["Members", "/KaizenClub/team"],
-  ["Projects", "/projects"],
+  ["Team", "/KaizenClub/team"],
+  ["Events", "/KaizenClub/events"],
   // ["Join Us", "https://forms.gle/dAGYv4SLC5wkFvxq9"],
 ];
 

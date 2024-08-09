@@ -25,18 +25,21 @@ export const membersData = [
     post: "Member",
     img: "members/Ayush.jpg",
     linkedin: "https://www.linkedin.com/in/aayush-singh-6b5978253",
+    github:"https://github.com/DevilHeartlesss"
   },
   {
     name: "Manisha",
     post: "Member",
     img: "members/Manisha.jpg",
     linkedin: "https://www.linkedin.com/in/manishakumari21",
+    github:"https://github.com/Manishakumari21"
   },
   {
     name: "Adista",
     post: "Member",
     img: "members/Adista.jpg",
     linkedin: "https://www.linkedin.com/in/adista-nautiyal-3011a7294",
+    github:"https://github.com/adistanautiyal"
   },
   {
     name: "Shivansh",

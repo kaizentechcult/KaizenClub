@@ -6,14 +6,11 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const Hero = () => {
   return (
     <div className="hero h-screen flex lg:flex-row overflow-hidden">
-      <div className="left w-full flex flex-col md:gap-20 justify-center">
-        {/* <h1 className="text-4xl md:text-[62px] text-[#004263] font-bold">
-          Kaizen Technical <br /> Community
-        </h1> */}
+      <div className="left w-full flex flex-col md:gap-10 justify-center">
         <h1 className="text-[64px] text-[#004263] font-bold leading-[4rem]">
           Kaizen Technical <br /> Community
         </h1>
-        <p className="md:text-xlw-5/6">
+        <p className="md:text-xl w-5/6">
           As a part of the Institute Technical Council, we aim to provide a
           gateway for the people in our institute to join the coding community.
           We create a platform which allows students to gain assistance and

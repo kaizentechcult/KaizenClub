@@ -6,7 +6,7 @@ import Loader from "../../components/Loader/Loader"
 
 const Team = () => {
   return (
-    <div className="team-container">
+    <div className="team-container py-20">
       {/* <h1>Team Participations</h1> */}
       <LazyLoadComponent placeholder={<Loader/>}>
         <KotlinGfg />
