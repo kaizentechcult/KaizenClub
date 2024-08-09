@@ -1,34 +1,33 @@
 import PropTypes from "prop-types";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Member = ({ name, post, img, linkedin, github }) => {
   return (
-    <div className="flex flex-col h-[30rem] pb-10 md:pb-0 justify-evenly md:hover:bg-slate-100 w-full sm:w-2/5 lg:w-[30%] m-1 rounded-lg">
-      <div className="flex justify-center items-center">
+    <div className="flex items-center p-8 sm:w-2/5 w-full lg:w-[31%] border border-gray-800 m-4 rounded-lg">
+      <div className="flex items-center">
         <LazyLoadImage
           src={img}
           alt="img"
           effect="blur"
-          width={192}
+          width={112}
           className="rounded-full"
         />
       </div>
-      <div className="text-center text-black flex flex-col gap-4">
+      <div className="text-center flex flex-col gap-2 md:items-center justify-end md:justify-center w-full">
         <p className="font-semibold">{name}</p>
-        <p className="font-semibold">Coding Club</p>
+        {/* <p className="font-semibold">Coding Club</p> */}
         <p className="text-gray-900">{post}</p>
         <div className="flex gap-10 justify-center">
           {github && (
-            <a aria-label="Github" href={github}>
-              <GitHubIcon />
+            <a target="_blank" aria-label="Github" href={github}>
+              <img alt="github" src="icons/github.svg" />
             </a>
           )}
           {linkedin && (
-            <a aria-label="Linkedin" href={linkedin}>
-              <LinkedInIcon />
+            <a target="_blank" aria-label="Linkedin" href={linkedin}>
+              <img alt="linkedin" src="icons/linkedin.svg" />
             </a>
           )}
         </div>
