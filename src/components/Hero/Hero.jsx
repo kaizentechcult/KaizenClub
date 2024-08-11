@@ -5,7 +5,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Hero = () => {
   return (
-    <div className="hero md:h-screen flex md:flex-row flex-col lg:flex-row overflow-hidden py-10">
+    <div className="hero md:h-screen relative flex md:flex-row flex-col lg:flex-row overflow-hidden py-10">
       <div className="left w-full flex flex-col md:gap-10 justify-center text-center md:text-left items-center md:items-start gap-10 py-10 md:py-0">
         <h1 className=" text-5xl md:text-[64px] text-[#004263] font-bold md:leading-[4rem]">
           Kaizen Technical <br /> Community
@@ -24,6 +24,7 @@ const Hero = () => {
           alt="img"
           effect="blur"
           width={400}
+          height={300}
           wrapperProps={{
             // If you need to, you can tweak the effect transition using the wrapper style.
             style: { transitionDelay: "1s" },

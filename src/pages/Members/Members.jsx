@@ -10,12 +10,12 @@ const Members = () => {
           <h1 className="text-5xl sm:text-5xl  text-primary-default tracking-wide text-[#4763b7] ">
             Kaizen Club Team
           </h1>
-          <p className="mt-4 md:mt-0 text-xl text-gray-500 md:text-xl md:pr-24 lg:pr-20 font-light leading-tight tracking-tight text-justify">
+          <p className="mt-4 md:mt-8 text-xl text-gray-500 md:text-xl md:pr-24 lg:pr-20 font-light leading-tight tracking-tight text-justify">
             Individual commitment to a group effort that is what makes a  team
             work, a <br /> company work, a society work, a civilisation work.
           </p>
         </div>
-        <div className="right">
+        <div className="right bg-[#F0F3FA]">
           <img src="hero/aboutus.svg" className="h-[300px] object-cover" alt="" />
         </div>
       </div>

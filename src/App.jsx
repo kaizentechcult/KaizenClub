@@ -8,6 +8,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <div className="h-12"></div>
       <Outlet />
       <Footer />
     </>

@@ -18,7 +18,7 @@ const handleClick = () => {
 const Navbar = () => {
   return (
     <>
-      <div className="w-full bg-[#1F2937] text-white flex md:flex-row flex-col justify-between md:px-64 px-4 h-[3.5rem] items-center navbar">
+      <div className="w-full bg-[#1F2937] text-white flex md:flex-row flex-col justify-between md:px-64 px-4 h-[3.5rem] items-center navbar absolute top-0">
         <div className="flex justify-between w-full mt-4 md:mt-0">
           <div className="logo">
             <NavLink to="/KaizenClub/">
