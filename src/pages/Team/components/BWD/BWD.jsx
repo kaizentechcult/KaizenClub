@@ -1,6 +1,6 @@
 import React from "react";
 
-import img1 from "/Team/BWD/img1.jpg";
+// import img1 from "/Team/BWD/img1.jpg";
 import img2 from "/Team/BWD/img2.webp";
 import img3 from "/Team/BWD/img3.webp";
 import img4 from "/Team/BWD/img4.webp";
@@ -18,7 +18,7 @@ import Heading from "../../../../components/Heading/Heading";
 
 const BWD = () => {
   const teamMembers = [
-    { img: img1, alt: "Member 1" },
+    // { img: img1, alt: "Member 1" },
     { img: img2, alt: "Member 2" },
     { img: img3, alt: "Member 3" },
     { img: img5, alt: "Member 5" },
