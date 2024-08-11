@@ -5,7 +5,7 @@ const Members = () => {
   return (
     <>
       <div className="md:px-64 px-4 flex md:flex-row flex-col justify-between items-center py-10 md:py-0 gap-8 md:gap-0">
-        <div className="left text-center md:text-start">
+        <div className="left text-center md:text-start mt-12">
           <h1 className="text-5xl sm:text-5xl">Meet the</h1>
           <h1 className="text-5xl sm:text-5xl  text-primary-default tracking-wide text-[#4763b7] ">
             Kaizen Club Team
@@ -15,12 +15,12 @@ const Members = () => {
             work, a <br /> company work, a society work, a civilisation work.
           </p>
         </div>
-        <div className="right bg-[#F0F3FA]">
-          <img src="hero/aboutus.svg" className="h-[300px] object-cover" alt="" />
+        <div className="right  right-0 md:absolute -z-50 mt-24  md:w-[40%]">
+          <img src="Hero/aboutus.svg" className="h-[300px] object-cover" alt="img" />
         </div>
       </div>
       <div className="text-center flex flex-col gap-6">
-        <h1 className="text-3xl font-bold md:text-4xl mt-[6rem] text-[#004263]">
+        <h1 className="text-3xl font-bold md:text-4xl mt-8 md:mt-[10rem] text-[#004263]">
           Meet the Dream Team
         </h1>
         <p className="text-base text-gray-700  md:text-lg font-light ">
