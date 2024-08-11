@@ -1,6 +1,6 @@
 import React from "react";
 
-import img1 from "/Team/BWD/img1.webp";
+import img1 from "/Team/BWD/img1.jpg";
 import img2 from "/Team/BWD/img2.webp";
 import img3 from "/Team/BWD/img3.webp";
 import img4 from "/Team/BWD/img4.webp";
@@ -44,8 +44,8 @@ const BWD = () => {
               width={400}
               wrapperProps={{
                 // If you need to, you can tweak the effect transition using the wrapper style.
-                style: {transitionDelay: "1s"},
-            }}
+                style: { transitionDelay: "1s" },
+              }}
               className="rounded-lg object-contain"
             />
           ))}
